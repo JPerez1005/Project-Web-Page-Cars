@@ -166,7 +166,6 @@ header .menu.active{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    overflow: hidden;
     transition: 0.5s;
 }
 
@@ -316,7 +315,6 @@ header .menu.active{
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
     background: linear-gradient(transparent, var(--primary));
     transform: rotateY(calc(90deg*var(--i))) translateZ(150px);/*translate z es la mitad del tamaño horizontal original*/
 }
@@ -358,12 +356,17 @@ header .menu.active{
 }
 
 /* Banner Gallery */
+.banner{
+    display: flex;
+    flex-direction: column;
+}
+
 .banner .gallery{
     position: absolute;
     content: '';
     /* left: 0; */
     bottom: 0;
-    width: 87%;
+    width: 50%;
     height: 30%;
     z-index: 100;
     background: transparent;
@@ -373,6 +376,7 @@ header .menu.active{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
 }
 
 .banner .gallery::before{
@@ -408,6 +412,38 @@ header .menu.active{
     font-size: 1.3em;
     font-weight: 300;
     letter-spacing: 1px;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1000px;
+    height: 430px;
+}
+
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
 }
 
 /* Responsive Design */

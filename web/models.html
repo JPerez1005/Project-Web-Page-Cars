@@ -12,14 +12,13 @@
 <body>
     <!-- Header -->
     <header>
-        <span class="year">2018 - 2023</span>
-        <a href="/" class="logo"><img src="../img/logo.png" alt="logo"></a>
         <a href="#" class="menu" onclick="toggleMenu();"></a>
     </header>
     <div class="banner">
         <ul class="nav">
-            <li><a href="#">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="#">Tecnology</a></li>
+            <li><a href="#">Cart</a></li>
             <li><a href="#">About</a></li>
         </ul>
         <div class="bg_video_list">
@@ -53,6 +52,21 @@
             autoplay
             loop
             muted></video>
+            <video class="bg_video mercedes_1"
+            src="../video/mercedes2.mp4"
+            autoplay
+            loop
+            muted></video>
+            <video class="bg_video porshe_1"
+            src="../video/porshe.mp4"
+            autoplay
+            loop
+            muted></video>
+            <video class="bg_video lamborghini_1"
+            src="../video/lamborghini.mp4"
+            autoplay
+            loop
+            muted></video>
         </div>
         <div class="content">
             <h3 class="model mclaren_1 active">765LT SPIDER</h3>
@@ -60,9 +74,10 @@
             <h3 class="model mclaren_3" style="color: red">750s</h3>
             <h3 class="model mclaren_4" style="color: rgb(247, 111, 0)">765lt</h3>
             <h3 class="model mclaren_5" style="color: rgb(187, 192, 221)">750s SPIDER</h3>
-            <h3 class="model audi_1" style="color: rgb(187, 192, 221)">Audi</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente quis unde quae soluta incidunt voluptatum nesciunt itaque ea. Necessitatibus, aliquid.</p>
-            <a href="#">Enquire</a>
+            <h3 class="model audi_1" style="color: white">Audi Urbansphere Concept</h3>
+            <h3 class="model mercedes_1" style="color: white">Mercedes-AMG GT</h3>
+            <h3 class="model porshe_1" style="color: white">Porshe Mission X</h3>
+            <h3 class="model lamborghini_1" style="color: orange">Lamborghini Aventador LP</h3>
         </div>
         <div class="gallery">
             <div class="carousel">
@@ -87,13 +102,37 @@
                     <h4 style="color: rgb(187, 192, 221)">750s SPIDER</h4>
                 </a>
                 <a class="carousel-item" href="#" onclick="changeVideo('audi_1')">
-                    <img src="../img/cars/mclaren-5.jpeg" alt="">
-                    <h4 style="color: rgb(187, 192, 221)">Audi</h4>
+                    <img src="../img/cars/audi concept.jpg" alt="">
+                    <h4 style="color: white">Audi Urbansphere Concept</h4>
+                </a>
+                <a class="carousel-item" href="#" onclick="changeVideo('mercedes_1')">
+                    <img src="../img/cars/mercedesAMG-Gt.jpg" alt="">
+                    <h4 style="color: black">Mercedes-AMG GT</h4>
+                </a>
+                <a class="carousel-item" href="#" onclick="changeVideo('porshe_1')">
+                    <img src="../img/cars/Porshe mission x.jpg" alt="">
+                    <h4 style="color: white">Porshe Mission X</h4>
+                </a>
+                <a class="carousel-item" href="#" onclick="changeVideo('lamborghini_1')">
+                    <img src="../img/cars/lamborghini aventador lp.jpg" alt="">
+                    <h4 style="color: orange">Lamborghini Aventador LP 700-4</h4>
                 </a>
             </div>
         </div>
     </div>
-    
+    <main>
+        <h1 style="color: aliceblue;">Detalles</h1>
+        <center>
+            <section>
+                <img src="../img/cars/audi concept.jpg" alt="audi">
+                <img src="../img/cars/lamborghini aventador lp.jpg" alt="lamborghini">
+                <img src="../img/cars/mercedesAMG-Gt.jpg" alt="mercedes">
+                <img src="../img/cars/Porshe mission x.jpg" alt="porshe">
+                <img src="../img/cars/mclaren-1.jpg" alt="maclaren">
+                <img src="../img/cars/mclaren-2.jpg" alt="">
+            </section>
+        </center>
+    </main>
     <!-- my js -->
     <script src="../js/models.js"></script>
     <!-- JQuery -->
