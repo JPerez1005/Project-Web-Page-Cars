@@ -1,153 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store</title>
     <link rel="stylesheet" href="../css/store.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
+
 <body>
-    <main>
-        <div class="card">
-            <img src="../img/modelos/lamborghini aventator lp.png" alt="">
-            <div class="content">
-                <div class="details">
-                    <h2>Aventator lp<br><span>Lamborghini</span></h2>
-                    <div class="data">
-                        <h3>Price:<br><span>320'000.000</span></h3>
-                        <div class="actionBtn">
-                            <button>buy</button>
+    <div class="container">
+        <div class="cubo">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="loading">
+            <div>
+                <h1>
+                    Loading data
+                    ...
+                </h1>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="nav_bar">
+            <a href="" class="logo">Store</a>
+            <div class="navigation">
+                <div class="nav_items">
+                    <i class="uil uil-times nav_close_btn"></i>
+                    <a href="../index.html"><i class="uil uil-estate"></i> Home</a>
+                    <a href="models.html"><i class="uil uil-car"></i> Models</a>
+                    <a href="about.html"><i class="uil uil-info-circle"></i> About</a>
+                    <a href="contact.html"><i class="uil uil-envelope"></i> Contact</a>
+                </div>
+            </div>
+            <i class="uil uil-apps nav_menu_btn"></i>
+        </div>
+    </header>
+    <main class="main" style="display: none;">
+        <input type="radio" name="filtro" id="all" checked>
+        <label for="all">All</label>
+        <input type="radio" name="filtro" id="Lamborghini">
+        <label for="Lamborghini">Lamborghini</label>
+        <input type="radio" name="filtro" id="porshe">
+        <label for="porshe">Porshe</label>
+        <input type="radio" name="filtro" id="mcLaren">
+        <label for="mcLaren">McLaren</label>
+        <input type="radio" name="filtro" id="ferrari">
+        <label for="ferrari">Ferrari</label>
+        <input type="radio" name="filtro" id="mercedes">
+        <label for="mercedes">Mercedes</label>
+        <input type="radio" name="filtro" id="audi">
+        <label for="audi">Audi</label>
+        <div class="cars-gallery">
+            <div class="Audi">
+                <div class="card Audi">
+                    <img src="../img/modelos/audiconcept2.png" alt="">
+                    <div class="content">
+                        <div class="details">
+                            <h2>Concept<br><span>Audi</span></h2>
+                            <div class="data">
+                                <h3>Price:<br><span>320'000.000</span></h3>
+                                <div class="actionBtn">
+                                    <button>buy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card Audi">
+                    <img src="../img/modelos/audi RS7.png" alt="">
+                    <div class="content">
+                        <div class="details">
+                            <h2>RS7<br><span>Audi</span></h2>
+                            <div class="data">
+                                <h3>Price:<br><span>320'000.000</span></h3>
+                                <div class="actionBtn">
+                                    <button>buy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card Audi">
+                    <img src="../img/modelos/audi r8.png" alt="">
+                    <div class="content">
+                        <div class="details">
+                            <h2>R8<br><span>Audi</span></h2>
+                            <div class="data">
+                                <h3>Price:<br><span>320'000.000</span></h3>
+                                <div class="actionBtn">
+                                    <button>buy</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="../img/modelos/audiconcept2.png" alt="">
-            <div class="content">
-                <div class="details">
-                    <h2>Concept<br><span>Audi</span></h2>
-                    <div class="data">
-                        <h3>Price:<br><span>320'000.000</span></h3>
-                        <div class="actionBtn">
-                            <button>buy</button>
+            <div class="Mercedes">
+                <div class="card Mercedes">
+                    <img src="../img/modelos/mercedes amg g-t.png" alt="">
+                    <div class="content">
+                        <div class="details">
+                            <h2>AMG G-T<br><span>Mercedes</span></h2>
+                            <div class="data">
+                                <h3>Price:<br><span>320'000.000</span></h3>
+                                <div class="actionBtn">
+                                    <button>buy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card Mercedes">
+                    <img src="../img/modelos/Mercedes AMG SL-63.png" alt="">
+                    <div class="content">
+                        <div class="details">
+                            <h2>AMG SL-63<br><span>Mercedes</span></h2>
+                            <div class="data">
+                                <h3>Price:<br><span>320'000.000</span></h3>
+                                <div class="actionBtn">
+                                    <button>buy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card Mercedes">
+                    <img src="../img/modelos/mercedes cle.png" alt="">
+                    <div class="content">
+                        <div class="details">
+                            <h2>CLE<br><span>Mercedes</span></h2>
+                            <div class="data">
+                                <h3>Price:<br><span>320'000.000</span></h3>
+                                <div class="actionBtn">
+                                    <button>buy</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="../img/modelos/mercedes amg g-t.png" alt="">
-            <div class="content">
-                <div class="details">
-                    <h2>AMG G-T<br><span>Mercedes</span></h2>
-                    <div class="data">
-                        <h3>Price:<br><span>320'000.000</span></h3>
-                        <div class="actionBtn">
-                            <button>buy</button>
+            <div class="Ferrari">
+                <div class="card Ferrari">
+                    <img src="../img/modelos/ferrari 812 gts.png" alt="">
+                    <div class="content">
+                        <div class="details">
+                            <h2>812 GTS<br><span>Ferrari</span></h2>
+                            <div class="data">
+                                <h3>Price:<br><span>320'000.000</span></h3>
+                                <div class="actionBtn">
+                                    <button>buy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card Ferrari">
+                    <img src="../img/modelos/ferrari kc-23.png" alt="">
+                    <div class="content">
+                        <div class="details">
+                            <h2>KC23<br><span>Ferrari</span></h2>
+                            <div class="data">
+                                <h3>Price:<br><span>320'000.000</span></h3>
+                                <div class="actionBtn">
+                                    <button>buy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card Ferrari">
+                    <img src="../img/modelos/458.png" alt="">
+                    <div class="content">
+                        <div class="details">
+                            <h2>458<br><span>Ferrari</span></h2>
+                            <div class="data">
+                                <h3>Price:<br><span>320'000.000</span></h3>
+                                <div class="actionBtn">
+                                    <button>buy</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="../img/modelos/porsche-mission-x.png" alt="">
-            <div class="content">
-                <div class="details">
-                    <h2>Mission X<br><span>Porshe</span></h2>
-                    <div class="data">
-                        <h3>Price:<br><span>320'000.000</span></h3>
-                        <div class="actionBtn">
-                            <button>buy</button>
+            <div class="McLaren">
+                <div class="card McLaren">
+                    <img src="../img/modelos/765lt spider.png" alt="">
+                    <div class="content">
+                        <div class="details">
+                            <h2>765lt spider<br><span>McLaren</span></h2>
+                            <div class="data">
+                                <h3>Price:<br><span>320'000.000</span></h3>
+                                <div class="actionBtn">
+                                    <button>buy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card McLaren">
+                    <img src="../img/modelos/Artura.png" alt="">
+                    <div class="content">
+                        <div class="details">
+                            <h2>Artura<br><span>McLaren</span></h2>
+                            <div class="data">
+                                <h3>Price:<br><span>320'000.000</span></h3>
+                                <div class="actionBtn">
+                                    <button>buy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card McLaren">
+                    <img src="../img/modelos/750s spider.png" alt="">
+                    <div class="content">
+                        <div class="details">
+                            <h2>750S SPIDER<br><span>McLaren</span></h2>
+                            <div class="data">
+                                <h3>Price:<br><span>320'000.000</span></h3>
+                                <div class="actionBtn">
+                                    <button>buy</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="../img/modelos/ferrari 812 gts.png" alt="">
-            <div class="content">
-                <div class="details">
-                    <h2>812 GTS<br><span>Ferrari</span></h2>
-                    <div class="data">
-                        <h3>Price:<br><span>320'000.000</span></h3>
-                        <div class="actionBtn">
-                            <button>buy</button>
+            <div class="Porshe">
+                <div class="card Porshe">
+                    <img src="../img/modelos/porsche-mission-x.png" alt="">
+                    <div class="content">
+                        <div class="details">
+                            <h2>Mission X<br><span>Porshe</span></h2>
+                            <div class="data">
+                                <h3>Price:<br><span>320'000.000</span></h3>
+                                <div class="actionBtn">
+                                    <button>buy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card Porshe">
+                    <img src="../img/modelos/porshe 911.png" alt="">
+                    <div class="content">
+                        <div class="details">
+                            <h2>911 carrera GTS<br><span>Porshe</span></h2>
+                            <div class="data">
+                                <h3>Price:<br><span>320'000.000</span></h3>
+                                <div class="actionBtn">
+                                    <button>buy</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="../img/modelos/765lt spider.png" alt="">
-            <div class="content">
-                <div class="details">
-                    <h2>765lt spider<br><span>McLaren</span></h2>
-                    <div class="data">
-                        <h3>Price:<br><span>320'000.000</span></h3>
-                        <div class="actionBtn">
-                            <button>buy</button>
+            <div class="Lamborghini">
+                <div class="card Lamborghini">
+                    <img src="../img/modelos/sian fkp 37a.png" alt="">
+                    <div class="content">
+                        <div class="details">
+                            <h2>sian fkp-37<br><span>Lamborghini</span></h2>
+                            <div class="data">
+                                <h3>Price:<br><span>320'000.000</span></h3>
+                                <div class="actionBtn">
+                                    <button>buy</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="../img/modelos/sian fkp-37 lamborghini.png" alt="">
-            <div class="content">
-                <div class="details">
-                    <h2>sian fkp-37<br><span>Lamborghini</span></h2>
-                    <div class="data">
-                        <h3>Price:<br><span>320'000.000</span></h3>
-                        <div class="actionBtn">
-                            <button>buy</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="lamborghini lp.png" alt="">
-            <div class="content">
-                <div class="details">
-                    <h2>Aventator lp<br><span>Lamborghini</span></h2>
-                    <div class="data">
-                        <h3>Price:<br><span>320'000.000</span></h3>
-                        <div class="actionBtn">
-                            <button>buy</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="lamborghini lp.png" alt="">
-            <div class="content">
-                <div class="details">
-                    <h2>Aventator lp<br><span>Lamborghini</span></h2>
-                    <div class="data">
-                        <h3>Price:<br><span>320'000.000</span></h3>
-                        <div class="actionBtn">
-                            <button>buy</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="lamborghini lp.png" alt="">
-            <div class="content">
-                <div class="details">
-                    <h2>Aventator lp<br><span>Lamborghini</span></h2>
-                    <div class="data">
-                        <h3>Price:<br><span>320'000.000</span></h3>
-                        <div class="actionBtn">
-                            <button>buy</button>
+                <div class="card Lamborghini">
+                    <img src="../img/modelos/lamborghini aventator lp.png" alt="">
+                    <div class="content">
+                        <div class="details">
+                            <h2>Aventator lp<br><span>Lamborghini</span></h2>
+                            <div class="data">
+                                <h3>Price:<br><span>320'000.000</span></h3>
+                                <div class="actionBtn">
+                                    <button>buy</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <script>
+        // CArga
+        document.addEventListener("DOMContentLoaded", function () {
+            // Simula una carga asincrónica
+            setTimeout(function () {
+                // Oculta la pantalla de carga
+                document.querySelector(".container").style.display = "none";
+
+                // Muestra el contenido principal
+                document.querySelector(".main").style.display = "block";
+            }, 3000); // Espera 3 segundos (3000 ms)
+        });
+
+        //Navigation bar effects on scroll
+        window.addEventListener('scroll', function () {
+            const header = this.document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        //REsponsive navigation menu toggle
+
+        const menuBtn = document.querySelector('.nav_menu_btn');
+        const closeBtn = document.querySelector('.nav_close_btn');
+        const navigation = document.querySelector('.navigation');
+
+        menuBtn.addEventListener('click', () => {
+            navigation.classList.add('active');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            navigation.classList.remove('active');
+        });
+    </script>
 </body>
+
 </html>
